@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <h1>Fun Calorie Counter</h1>
+  <link rel="stylesheet" href="main.css">
+  <script type="text/javascript" src="main.js"></script>
+  <!--Food emoji classes-->
+  <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+</head>
+<body style="background-color:#9AC1D0">
+
+  <!--First block of side by side food items (Doughnut, Ice Cream)-->
+  <div align=center>
+    <div id="wrapper">
+      <!--the entire div needs to be labelled first instead of labelling them each individually as first-->
+      <div id="first" align=center style="background-color:deeppink">
+        <div>Doughnut (1)</div>
+        <div><i class="em em-doughnut"></i></div>
+        <div><button onclick="addCalories('Dplus')">+</button><button onclick="addCalories('Dminus')">-</button></div>
+      </div>
+      <div id="second" style="background-color:lime" align=center>
+        <div>Ice Cream (1 Cup)</div>
+        <div class="em em-ice_cream"></div>
+        <div><button onclick="addCalories('ICplus')">+</button><button onclick="addCalories('ICminus')">-</button></div>
+      </div>
+    </div>
+  </div>
+
+  <!--Second block of side by side food items (Pancake, Taco)-->
+  <div align=center>
+    <div id="wrapper">
+      <div id="first" style="background-color:aqua" align=center>
+        <div>Pancake (1)</div>
+        <div><i class="em em-pancakes"></i></div>
+        <div><button onclick="addCalories('Pplus')">+</button><button onclick="addCalories('Pminus')">-</button></div>
+      </div>
+      <div id="second" style="background-color:mediumorchid" align=center>
+        <div>Taco (1)</div>
+        <div><i class="em em-taco"></i></div>
+        <div><button onclick=addCalories('Tplus')>+</button><button onclick="addCalories('Tminus')">-</button></div>
+      </div>
+    </div>
+  </div>
+
+  <!--Third block of side by side food items (Chicken Leg, Strawberries)-->
+  <div align=center>
+    <div id="wrapper">
+      <div id="first" style="background-color:crimson" align=center>
+        <div>Chicken Leg (1)</div>
+        <div><i class="em em-poultry_leg"></i></div>
+        <div><button onclick="addCalories('Cplus')">+</button><button onclick="addCalories('Cminus')">-</button></div>
+      </div>
+      <div id="second" style="background-color:orange" align=center>
+        <div>Strawberries (10)</div>
+        <div class="em em-strawberry"></div>
+        <div><button onclick="addCalories('Splus')">+</button><button onclick="addCalories('Sminus')">-</button></div>
+      </div>
+    </div>
+  </div>
+
+  <!--Displays the total amount of calories consumed-->
+  <div id="calculator" align=center class="hidden">
+    <div id="wrapper">
+      <div id="first" align=right style="border-color:#9AC1D0">Total:</div>
+      <div id="second" align=left style="border-color:#9AC1D0">
+        <div id="total"></div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
